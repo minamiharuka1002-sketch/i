@@ -121,29 +121,70 @@
 
 
 /*ここから上達のヒント*/
+@media (max-width: 768px) {
+    .hero-title {
+        background-attachment: scroll; /* ← fixed off on mobile */
+        margin-bottom: 150px; /* optional, already in your code */
+    }
+}
 
 
 @media (max-width: 600px) {
 
 
+    .hero-title {
+        margin-bottom: 150px;
+    }
+
     .image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+   display: flex;
+   flex-direction: column;
 
+   justify-content: center;
+   align-items: center;
+
+}
+
+.image-card {
     width: 100%;
-    overflow: hidden;
+    height: 60%;
 }
 
-.tips-image {
-    max-width: 100%;
-  height: auto;
-  display: block;
-
-}
 
 .hero-title,.hero-first-sentence,.hero-second-sentence,.hero-third-sentence {
     width: 100%;
+}
+
+.tips-subtitle {
+    font-size: 15px;
+}
+
+.tips-title {
+    font-size: 25px;
+}
+
+.main-title {
+    font-size: 19px;
+}
+
+.main-subtitle {
+    font-size: 16px;
+}
+
+.title-content {
+    font-size: 19px;
+
+    margin-top: 170px;
+    margin-bottom: 10px;
+}
+
+.click {
+    margin-bottom: 120px;
+}
+
+.card-text {
+    font-size: 13px;
+    padding: 18px;
 }
 
 }

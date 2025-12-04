@@ -2,10 +2,14 @@
 
 /*ここからbodyセクション*/
 
+
+
+
 .whole-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5%;
+
 }
 
 .flexbox {
@@ -41,13 +45,13 @@
 
 
 .flexbox-second .tips {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     color: rgb(255, 95, 80);
 }
 
 .tips-text {
-    font-size: 28px;
+    font-size: 19px;
     font-weight: 1000;
 
     margin-bottom: 13px;
@@ -158,10 +162,25 @@
         flex-direction: column;
     }
 
+    
+
 }
 
 
+
+
 /*スマホサイズ*/
+
+@media (max-width: 768px) {
+    .flexbox-growth {
+        background-attachment: scroll; /* ← fixed をオフ */
+
+        
+    }
+    .whole-section {
+        padding: 0 5%; /* 左右の余白を増やす */
+    }
+}
 
 @media (max-width: 600px) {
 
@@ -175,17 +194,7 @@
     }
 
 
-    .nav-content {
-        display: flex;
-        flex-direction: row;
-
-        justify-content: space-evenly;
-
-        margin-right: 0px;
-
-        font-size: 13px;
-        font-weight: bold;
-    }
+    
 
     .hero-title,.hero-first-sentence,.hero-second-sentence,.hero-third-sentence {
         width: 90%;
@@ -194,10 +203,20 @@
 
     }
 
+    .hero-zero-sentence {
+        text-align: center;
+
+        font-size: 18px;
+
+        margin-top: 40%;
+    }
+
     .hero-title {
-        font-size: 55px;
-        margin-bottom: 40px;
+        font-size: 50px;
+        margin-bottom: 20px;
         width: 85%;
+
+        text-align: center;
     }
 
     .hero-first-sentence,.hero-second-sentence,.hero-third-sentence {
@@ -250,7 +269,7 @@
     }
 
     .tips-text {
-        font-size:23px;
+        font-size:20px;
 
     
     }

@@ -1,5 +1,10 @@
+
+
+
 .hero-title {
         background-image: url(../picture/compass.jpg);
+        background-size: cover;
+        background-position: center;
 
 }
 
@@ -8,6 +13,11 @@
     margin: 0 auto;
 
     
+}
+
+.whole-section-survey {
+    width: 65%;
+    margin: 0 auto;
 }
 
 .main-title {
@@ -44,7 +54,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 270px;
+    margin-bottom: 150px;
 
 }
 
@@ -84,6 +94,12 @@
     align-items: center;
     justify-content:center ;
 }
+
+.flow-title > div {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .flow-flexbox {
@@ -183,17 +199,64 @@
     border-radius: 30px;
 
     padding: 50px;
+
 }
 
 
 .result-card {
-    background-color: lightblue;
 
-    
+    color: rgb(70, 63, 58);
 
-    width: 85%;
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.10);
+
+    border-radius: 30px;
+
+    margin: 0 auto;
+
+    width: 70%;
+    height: 400px;
+
+    position: relative;
+
+    transition: background-color 0.15s;
 }
+
+.color-line {
+    position: absolute;
+
+    top: 10%;
+    right: 0;
+}
+
+
+
+
+.learn-more {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    border-radius: 30px;
+    border: none;
+
+    background-color: rgb(255, 89, 89) ;
+    color: white;
+    font-weight: bold;
+
+    transition: opacity 0.2s;
+}
+
+.learn-more:hover {
+    opacity: 0.7;
+}
+
 
 .result-container {
     display: grid;
@@ -201,7 +264,37 @@
     place-items: center;
     
 
-    gap: 20px;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.result-link {
+    width: 100%;
+}
+
+.result-link div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.heart {
+    width: 60px;
+
+    margin: 30px;
+}
+
+.curiosity-text {
+    font-weight: bold;
+
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+
+    margin-bottom: 40px;
 }
 
 .flexbox-help-subtitle {
@@ -311,6 +404,150 @@
 
 
 
+
+
 .footer {
     margin-top: 200px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        background-attachment: scroll; /* ← fixed off on mobile */
+        margin-bottom: 150px; /* optional, already in your code */
+    }
+
+    .flow-flexbox {
+        flex-direction: column;
+        height: auto;       /* 高さ固定はやめる */
+        margin-top: 50px;
+    }
+
+    .number-container {
+        width: 80%;         /* スマホ画面に合わせて幅を調整 */
+        margin-bottom: 30px;
+    }
+    .line {
+        width: 60%;        /* 画面幅に合わせて縮小 */
+        margin-bottom: 20px;
+    }
+    .flow-title {
+        padding: 0 20px;  /* 左右に余白を入れてはみ出さないように */
+    }
+
+    .whole-section-survey {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .tips-subtitle {
+        font-size: 15px;
+    }
+
+    .tips-title {
+        font-size: 25px;
+    }
+
+    .main-title {
+        font-size: 19px;
+    }
+
+    .main-subtitle {
+        font-size: 16px;
+
+        margin-top: 0;
+    }
+
+    .highlight-second {
+        font-size: 22px;
+    }
+
+    .second-subtitle {
+        font-size: 16px;
+    }
+
+    .flow-text-title {
+        font-size: 19px;
+    }
+
+    .flow-flexbox {
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+        gap: 50px;
+    }
+
+    .flow-entire-flexbox {
+        height: 900px;
+    }
+
+    .result-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        padding-top: 100px;
+    }
+
+ 
+
+
+
+    .flexbox-help-subtitle {
+        margin-top: 300px;
+    }
+
+    .need-help {
+        font-size: 15px;
+
+    }
+
+    .help-title {
+        font-size: 19px;
+    }
+
+    .help-comment {
+        font-size: 16px;
+    }
+
+    .flexbox-help {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .first-flow-title {
+        font-size: 19px;
+
+    }
+
+    .flow-entire-flexbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heart {
+        width: 40px;
+    }
+
+    .curiosity-text {
+        font-size: 18px;
+    }
+
+    .result-card {
+        height: 380px;
+        width: 100% !important;
+    }
+
+
+
+
+
+
+
+
+
 }
